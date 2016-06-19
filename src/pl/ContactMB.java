@@ -28,11 +28,7 @@ public class ContactMB {
 				.request("application/xml")
 				.post(Entity.entity(contact, "application/xml"))
 				.getStatus();
-		System.out.println("HECHOOO");
 	}
-	
-	
-	
 	
 	//getters and setters
 	public Contact getContact() {
