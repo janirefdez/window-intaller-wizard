@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+h1{
+	background-color: White;
+	color: #80002C;
+	font-weight: bolder;
+	text-decoration: underline;
+	font-size: medium;
+	font-style: oblique
+}
+
+table{
+	background-color: LightBlue;
+	color: #1A1A1A;
+	font-weight: normal;
+	border-color: Blue;
+	font-style: normal;
+	text-align: center
+}
+
+th{
+	background-color: #145165;
+	color: White;
+	font-weight: bold;
+	font-style: italic
+}

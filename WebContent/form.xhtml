@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	<ui:composition template="/WEB-INF/Plantilla.xhtml">
+	<ui:define name="PageTitle">Inserts all fields</ui:define>
+	
+	<ui:define name="content">
+	<h:form>
+	
+		<br/>First Name: <h:inputText id="name" value="#{contactMB.contact.firstName}" required="true" requiredMessage="ERROR: missing first name" />
+			<h:message for="name" style="color: red" />
+		<br/>Last Name: <h:inputText id="Lastname" value="#{contactMB.contact.lastName}" required="true" requiredMessage="ERROR: missing last name" />
+			<h:message for="Lastname" style="color: red" />
+		<br/>Address: <h:inputText id="address" value="#{contactMB.contact.address}" required="true" requiredMessage="ERROR: missing address" />
+			<h:message for="address" style="color: red" />
+		<br/>Telephone: <h:inputText id="telephone" value="#{contactMB.contact.telephone}" required="true" requiredMessage="ERROR: missing telephone" />
+			<h:message for="telephone" style="color: red" />
+		<br/> <h:commandButton action= "information.xhtml"  id="next" value ="NEXT" />
+	</h:form>	
+	</ui:define>
+	</ui:composition>
+</html>
